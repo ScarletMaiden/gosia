@@ -35,4 +35,5 @@ if search and q.strip():
         st.success(f"Znaleziono {len(res)} rekord(y).")
         st.dataframe(res, use_container_width=True)
 else:
-    st.dataframe(df.tail(10), use_container_width=True)
+
+    st.dataframe(df, use_container_width=True)
