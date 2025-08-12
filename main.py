@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 
-FILE_PATH = "takk.xlsx"
+FILE_PATH = "praca.xlsx"
 
 
 COLS = [' nr zamówienia', 'nr badania', 'status ', 'imię konia',
@@ -36,4 +36,5 @@ if search and q.strip():
 else:
 
     st.dataframe(df, use_container_width=True)
+
 
